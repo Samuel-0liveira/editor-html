@@ -10,6 +10,38 @@ namespace EditorHtml
 
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Black;
+
+            DesenharTela();
+        }
+
+        public static void DesenharTela()
+        {
+            Console.Write("+");
+            for (int cabecalho = 0; cabecalho <= 35; cabecalho++)
+            {
+                Console.Write("-");
+            }
+            Console.Write("+");
+            Console.Write("\n");
+
+            for (int linhas = 0; linhas <= 10; linhas++)
+            {
+                Console.Write("|");
+                for (int espaco = 0; espaco <= 35; espaco++)
+                {
+                    Console.Write(" ");
+                }
+                Console.Write("|");
+                Console.Write("\n");
+            }
+
+            Console.Write("+");
+            for (int rodape = 0; rodape <= 35; rodape++)
+            {
+                Console.Write("-");
+            }
+            Console.Write("+");
+            Console.Write("\n");
         }
     }
 }
