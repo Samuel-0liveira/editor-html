@@ -16,13 +16,7 @@ namespace EditorHtml
 
         public static void DesenharTela()
         {
-            Console.Write("+");
-            for (int cabecalho = 0; cabecalho <= 35; cabecalho++)
-            {
-                Console.Write("-");
-            }
-            Console.Write("+");
-            Console.Write("\n");
+            CabecalhoRodape();
 
             for (int linhas = 0; linhas <= 10; linhas++)
             {
@@ -35,8 +29,13 @@ namespace EditorHtml
                 Console.Write("\n");
             }
 
+            CabecalhoRodape();
+        }
+
+        public static void CabecalhoRodape()
+        {
             Console.Write("+");
-            for (int rodape = 0; rodape <= 35; rodape++)
+            for (int cabecalho = 0; cabecalho <= 35; cabecalho++)
             {
                 Console.Write("-");
             }
