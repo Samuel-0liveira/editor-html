@@ -4,7 +4,7 @@ namespace EditorHtml
 {
     public static class Menu
     {
-        public static void Show()
+        public static void Mostrar()
         {
             Console.Clear();
 
@@ -75,7 +75,7 @@ namespace EditorHtml
             switch(opcao)
             {
                 case 1:
-                    Console.WriteLine("Editor");
+                    Editor.Mostrar();
                     break;
                 case 2:
                     Console.WriteLine("Visualizador");
@@ -86,7 +86,7 @@ namespace EditorHtml
                     break;
                 default:
                     Console.Clear();
-                    Show();
+                    Mostrar();
                     break;
             }
         }
