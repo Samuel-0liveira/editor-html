@@ -14,7 +14,8 @@ namespace EditorHtml
             DesenharTela();
             EscreverOpcoes();
 
-            Console.ReadKey();
+            var opcao = short.Parse(Console.ReadLine()!);
+            ControleDoMenu(opcao);
         }
 
         public static void DesenharTela()
@@ -67,6 +68,27 @@ namespace EditorHtml
 
             Console.SetCursorPosition(3,12);
             Console.Write("Opção: ");
+        }
+
+        public static void ControleDoMenu(short opcao)
+        {
+            switch(opcao)
+            {
+                case 1:
+                    Console.WriteLine("Editor");
+                    break;
+                case 2:
+                    Console.WriteLine("Visualizador");
+                    break;
+                case 0:
+                    Console.Clear();
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.Clear();
+                    Show();
+                    break;
+            }
         }
     }
 }
